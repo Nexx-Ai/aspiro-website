@@ -24,7 +24,7 @@ export default function Home() {
               <Button
                 asChild
                 size="lg"
-                className="bg-purple px-8 hover:bg-purple-dark"
+                className="bg-purple px-8 hover:bg-[var(--color-accent-purple)]"
               >
                 <Link href="/contact">Let&apos;s Talk</Link>
               </Button>

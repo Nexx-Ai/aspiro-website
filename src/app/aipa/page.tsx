@@ -199,7 +199,7 @@ export default function AIPAPage() {
             <Button
               asChild
               size="lg"
-              className="mt-8 bg-purple px-8 hover:bg-purple-dark"
+              className="mt-8 bg-purple px-8 hover:bg-[var(--color-accent-purple)]"
             >
               <Link href="/contact">Book a Call</Link>
             </Button>

@@ -156,7 +156,7 @@ export default function ServicesPage() {
             <Button
               asChild
               size="lg"
-              className="mt-8 bg-purple px-8 hover:bg-purple-dark"
+              className="mt-8 bg-purple px-8 hover:bg-[var(--color-accent-purple)]"
             >
               <Link href="/contact">Book a Free Call</Link>
             </Button>

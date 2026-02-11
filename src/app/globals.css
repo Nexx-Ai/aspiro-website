@@ -49,6 +49,8 @@
   --color-purple-light: #5BA0FF;
   --color-purple-dark: #0066CC;
   --color-purple-glow: rgb(45 140 255 / 0.15);
+  --color-accent-purple: #8B5CF6;
+  --color-accent-purple-light: #A78BFA;
 }
 
 :root {
