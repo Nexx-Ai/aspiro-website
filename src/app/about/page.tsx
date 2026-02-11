@@ -87,8 +87,35 @@ export default function AboutPage() {
             </div>
           </div>
           
+          {/* Mission Statement */}
+          <div className="mt-16 max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold text-center mb-8">
+              We believe in democratizing AI for everyone.
+            </h2>
+            <div className="space-y-6 text-muted-foreground">
+              <p>
+                We believe that AI is for everyone. Unfortunately, small businesses
+                don&apos;t have the resources or bandwidth like the big players. We aim
+                to change that.
+              </p>
+              <p>
+                We give you something you&apos;ve probably never had &mdash; a team that&apos;s
+                always there. One that remembers every customer, every conversation,
+                every detail you&apos;d normally lose in the chaos of running a business.
+                It learns how <em>you</em> work. It picks up the things that slip through
+                the cracks. And it never burns out, even when you&apos;re running on empty.
+              </p>
+              <p className="italic">
+                A machine mind whose primary job is to carry human intention forward
+                when you get tired, distracted, or blocked by complexity. Not to
+                replace your ambition. To preserve it.
+              </p>
+            </div>
+          </div>
+
           {/* Story */}
           <div className="mt-16 max-w-3xl mx-auto">
+            <h3 className="text-xl font-semibold text-center mb-6">Our Story</h3>
             <div className="space-y-6 text-muted-foreground">
               <p>
                 We founded Aspiro AI after years of watching businesses struggle
