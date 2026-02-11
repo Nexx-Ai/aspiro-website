@@ -14,7 +14,7 @@ export default function Home() {
             </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               You know AI matters.{" "}
-              <span className="bg-gradient-to-r from-purple-light via-purple to-purple-dark bg-clip-text text-transparent">We make it actually work for your business.</span>
+              <span className="bg-gradient-to-r from-[var(--color-purple-light)] via-[var(--color-purple)] to-[var(--color-purple-dark)] bg-clip-text text-transparent">We make it actually work for your business.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
               Not another chatbot demo. We build AI that saves your team hours
