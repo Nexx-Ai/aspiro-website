@@ -2,7 +2,7 @@
 
 **Domain:** AspiroAI.digital  
 **Company:** Aspiro AI Ltd  
-**Contact:** steve@aspiroai.digital
+**Contact:** enquiries@aspiroai.digital
 
 ## Strategic Direction
 **Mission-led, consultative approach**

@@ -55,10 +55,10 @@ export default function ContactPage() {
                   24 hours.
                 </p>
                 <a
-                  href="mailto:steve@aspiroai.digital"
+                  href="mailto:enquiries@aspiroai.digital"
                   className="mt-4 inline-block text-purple transition-colors hover:text-purple-light"
                 >
-                  steve@aspiroai.digital
+                  enquiries@aspiroai.digital
                 </a>
               </div>
 

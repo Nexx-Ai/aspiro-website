@@ -45,10 +45,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:steve@aspiroai.digital"
+                  href="mailto:enquiries@aspiroai.digital"
                   className="transition-colors hover:text-foreground"
                 >
-                  steve@aspiroai.digital
+                  enquiries@aspiroai.digital
                 </a>
               </li>
             </ul>
