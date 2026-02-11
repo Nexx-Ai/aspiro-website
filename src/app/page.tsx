@@ -9,16 +9,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--color-purple-glow)_0%,_transparent_50%)]" />
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:py-40">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="mb-4 text-sm font-medium tracking-wider text-purple-light uppercase">
-              AI Consultancy for SMEs
-            </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              You know AI matters.{" "}
-              <span className="bg-gradient-to-r from-[var(--color-purple-light)] via-[var(--color-purple)] to-[var(--color-purple-dark)] bg-clip-text text-transparent">We make it actually work for your business.</span>
+              <span className="bg-gradient-to-r from-[var(--color-purple-light)] via-[var(--color-purple)] to-[var(--color-purple-dark)] bg-clip-text text-transparent">Making AI work for businesses like yours.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-              Not another chatbot demo. We build AI that saves your team hours
-              every week. Custom-fit to how you already work.
+              Custom-fit AI that saves your team hours every week.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button
