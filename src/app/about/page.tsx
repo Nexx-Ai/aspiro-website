@@ -18,12 +18,8 @@ export default function AboutPage() {
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Built on a simple belief
+              We believe in democratizing AI for everyone.
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground">
-              AI should work for your business, not the other way around. That&apos;s
-              why Aspiro AI exists.
-            </p>
           </div>
         </div>
       </section>
@@ -89,9 +85,6 @@ export default function AboutPage() {
           
           {/* Mission Statement */}
           <div className="mt-16 max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-8">
-              We believe in democratizing AI for everyone.
-            </h2>
             <div className="space-y-6 text-muted-foreground">
               <p>
                 We believe that AI is for everyone. Unfortunately, small businesses
