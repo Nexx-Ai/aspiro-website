@@ -128,3 +128,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 8px rgb(139 92 246 / 0.4), 0 0 20px rgb(139 92 246 / 0.15);
+  }
+  50% {
+    box-shadow: 0 0 16px rgb(139 92 246 / 0.6), 0 0 32px rgb(139 92 246 / 0.25);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2.5s ease-in-out infinite;
+}

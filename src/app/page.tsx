@@ -14,7 +14,7 @@ export default function Home() {
             </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               You know AI matters.{" "}
-              <span className="text-purple">We make it actually work for your business.</span>
+              <span className="bg-gradient-to-r from-purple-light via-purple to-purple-dark bg-clip-text text-transparent">We make it actually work for your business.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
               Not another chatbot demo. We build AI that saves your team hours
@@ -118,7 +118,7 @@ export default function Home() {
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-purple/10 text-sm font-bold text-purple">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-purple/20 bg-purple/10 text-2xl font-bold text-purple shadow-md shadow-purple/10">
                   {item.step}
                 </div>
                 <h3 className="mt-4 text-lg font-semibold">{item.title}</h3>
@@ -172,7 +172,7 @@ export default function Home() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="group rounded-xl border border-border/50 bg-card p-6 transition-colors hover:border-purple/30 hover:bg-card/80"
+                className="group rounded-xl border border-border/50 bg-card p-6 transition-all duration-300 hover:scale-[1.02] hover:border-purple/30 hover:bg-card/80 hover:shadow-lg hover:shadow-purple/5"
               >
                 <h3 className="text-lg font-semibold group-hover:text-purple">
                   {service.title}
@@ -204,7 +204,7 @@ export default function Home() {
             <Button
               asChild
               size="lg"
-              className="mt-8 bg-purple px-8 hover:bg-purple-dark"
+              className="animate-glow-pulse mt-8 bg-purple px-8 hover:bg-purple-dark"
             >
               <Link href="/contact">Book a Free Call</Link>
             </Button>
