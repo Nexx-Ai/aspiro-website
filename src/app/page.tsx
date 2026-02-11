@@ -14,11 +14,11 @@ export default function Home() {
             </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               You know AI matters.{" "}
-              <span className="text-purple">You just don&apos;t know where to start.</span>
+              <span className="text-purple">We make it actually work for your business.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-              We&apos;re not selling tools. We&apos;re building minds that fit your
-              business &mdash; with a human-first approach that actually sticks.
+              Not another chatbot demo. We build AI that saves your team hours
+              every week. Custom-fit to how you already work.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button
@@ -65,9 +65,9 @@ export default function Home() {
                   "You've played with ChatGPT, maybe even tried automating something. But it didn't integrate. It didn't last. It didn't feel like yours.",
               },
               {
-                title: "Know it matters, but where to start?",
+                title: "Your competitors aren't waiting",
                 description:
-                  "You can see competitors moving. You know AI is reshaping your industry. But the gap between knowing and doing feels enormous.",
+                  "That business down the road just automated half their admin. Your industry is moving fast. Every month you delay is ground you have to make up later.",
               },
             ].map((item) => (
               <div
@@ -93,7 +93,7 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-muted-foreground">
               We don&apos;t push tools. We don&apos;t speak in jargon. We sit down, listen,
-              and figure out where AI actually helps &mdash; then we build it with you.
+              and figure out where AI actually helps. Then we build it with you.
             </p>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-3">
@@ -102,19 +102,19 @@ export default function Home() {
                 step: "01",
                 title: "Listen & Understand",
                 description:
-                  "We start with your business, not our tech stack. What are you trying to achieve? Where are the bottlenecks?",
+                  "We spend time in your business before we touch any tech. Who does what, where the time goes, what's costing you money. That's where we start.",
               },
               {
                 step: "02",
                 title: "Design & Build",
                 description:
-                  "We create AI solutions tailored to your workflows. No cookie-cutter templates. Everything is built to fit.",
+                  "We build AI that plugs into your existing tools. Your CRM, your inbox, your spreadsheets. No ripping and replacing. It works where you already work.",
               },
               {
                 step: "03",
-                title: "Embed & Grow",
+                title: "Support & Scale",
                 description:
-                  "We don't just deliver and disappear. We make sure the solution sticks, your team understands it, and it evolves with you.",
+                  "We train your team, monitor what's working, and adjust as your business changes. You're never left figuring it out alone.",
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
@@ -147,25 +147,25 @@ export default function Home() {
               {
                 title: "AI Audit & Advisory",
                 description:
-                  "A clear-eyed look at your business through an AI lens. We identify where AI can genuinely help and where it can't.",
+                  "A clear-eyed look at your business through an AI lens. We identify where AI can genuinely help and where it can't. You walk away with a prioritised action plan, not a vague report.",
                 href: "/services",
               },
               {
                 title: "AI Automation Builds",
                 description:
-                  "Custom automations that plug into your existing workflows. From lead handling to internal ops, built to save you real time.",
+                  "Custom automations that plug into your existing workflows. Lead handling, invoicing, internal ops. Most clients get 10+ hours back per week.",
                 href: "/services",
               },
               {
                 title: "AIPA - AI Personal Assistant",
                 description:
-                  "Your own AI assistant, trained on your business knowledge. It doesn't just answer questions \u2014 it thinks like part of your team.",
+                  "Your own AI assistant, trained on your business knowledge. It answers customer questions, drafts proposals, and handles routine tasks so your team can focus on the work that matters.",
                 href: "/aipa",
               },
               {
                 title: "Micro Apps",
                 description:
-                  "Small, focused AI-powered applications that solve one specific problem brilliantly. Fast to build, easy to use.",
+                  "Small, focused AI-powered apps that solve one specific problem brilliantly. Fast to build, easy to use, and they start paying for themselves in weeks.",
                 href: "/services",
               },
             ].map((service) => (
@@ -195,11 +195,11 @@ export default function Home() {
         <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">
-              Ready to figure this out?
+              Curious? Let&apos;s have a chat.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              No pitch. No pressure. Just a conversation about where AI fits
-              in your business. Let&apos;s start there.
+              30 minutes, no pitch, no obligation. Just an honest conversation
+              about what AI could do for your business. Worst case, you leave with a few good ideas.
             </p>
             <Button
               asChild
