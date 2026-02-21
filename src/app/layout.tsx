@@ -49,6 +49,36 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Aspiro AI",
+  url: "https://aspiroai.digital",
+  description:
+    "We help small and medium businesses harness AI to work smarter, not harder. Practical AI solutions that actually ship.",
+  foundingDate: "2024",
+  areaServed: "GB",
+  serviceType: [
+    "AI Consulting",
+    "AI Automation",
+    "AI Personal Assistant",
+    "Web Development",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Aspiro AI",
+  url: "https://aspiroai.digital",
+  description:
+    "AI consulting for UK SMEs — practical AI solutions that actually ship.",
+  publisher: {
+    "@type": "Organization",
+    name: "Aspiro AI",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -59,6 +89,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
         <Header />
         <main className="min-h-screen pt-16">{children}</main>
         <Footer />

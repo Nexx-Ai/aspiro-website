@@ -13,9 +13,52 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How is this different from Wix/Squarespace?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Those are templates. We build custom, with AI-discoverability baked in from the start. No plugin bloat, no slow load times.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What about my existing website?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We can migrate your content or start fresh. Either way, you keep your domain.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does it take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most sites are live within 2-3 weeks.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What if I want AI features later?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "That's the point. Your Digital Foundation is ready to plug into AIPA (our AI assistant platform) whenever you are.",
+      },
+    },
+  ],
+};
+
 export default function DigitalFoundationPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--color-purple-glow)_0%,_transparent_50%)]" />
