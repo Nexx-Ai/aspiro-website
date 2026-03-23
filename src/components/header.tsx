@@ -9,11 +9,11 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/education", label: "Education" },
+  { href: "https://www.aspirocareers.com", label: "Education", external: true },
   { href: "/aipa", label: "AIPA" },
   { href: "/digital-foundation", label: "Digital Foundation" },
   { href: "/contact", label: "Contact" },
-];
+] as { href: string; label: string; external?: boolean }[];
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -33,15 +33,27 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {link.label}
+              </Link>
+            )
+          )}
           <Button asChild className="ml-4 bg-purple hover:bg-purple-dark">
             <Link href="/contact">Let&apos;s Talk</Link>
           </Button>
@@ -67,16 +79,29 @@ export function Header() {
       {mobileOpen && (
         <div className="border-t border-border/50 bg-background/95 backdrop-blur-md md:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="rounded-md px-3 py-2 text-muted-foreground transition-colors hover:text-foreground"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileOpen(false)}
+                  className="rounded-md px-3 py-2 text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="rounded-md px-3 py-2 text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             <Button
               asChild
               className="mt-2 bg-purple hover:bg-purple-dark"
