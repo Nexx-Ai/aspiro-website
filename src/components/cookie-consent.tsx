@@ -4,7 +4,7 @@ import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 
-const GA_MEASUREMENT_ID = "G-8G9H5Y007E";
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "";
 
 export function CookieBanner() {
   const [hasConsent, setHasConsent] = useState(false);
@@ -16,7 +16,7 @@ export function CookieBanner() {
 
   return (
     <>
-      {hasConsent && (
+      {hasConsent && GA_MEASUREMENT_ID && (
         <>
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
