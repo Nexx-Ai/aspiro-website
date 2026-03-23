@@ -31,11 +31,12 @@ export default function AboutPage() {
             The people behind Aspiro
           </h2>
           
-          {/* Founders Grid */}
-          <div className="grid gap-12 md:grid-cols-3 max-w-5xl mx-auto">
+          {/* Team List */}
+          <div className="space-y-16 max-w-4xl mx-auto">
+
             {/* Steve */}
-            <div className="text-center">
-              <div className="relative h-64 w-64 mx-auto overflow-hidden rounded-2xl border-2 border-purple/30 shadow-lg shadow-purple/10">
+            <div className="grid gap-8 sm:grid-cols-[200px_1fr] sm:items-start">
+              <div className="relative mx-auto sm:mx-0 h-48 w-48 sm:w-full overflow-hidden rounded-2xl border-2 border-purple/30 shadow-lg shadow-purple/10" style={{minHeight: '200px'}}>
                 <Image
                   src="/steve-headshot.jpg"
                   alt="Steve Paulachak - Co-Founder of Aspiro AI"
@@ -44,23 +45,42 @@ export default function AboutPage() {
                   priority
                 />
               </div>
-              <p className="mt-4 text-lg font-medium">Steve Paulachak</p>
-              <p className="text-sm text-muted-foreground">Co-Founder</p>
-              <a
-                href="https://www.linkedin.com/in/stevepaulachak/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-block text-purple hover:text-purple-light transition-colors"
-              >
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
+              <div>
+                <p className="text-lg font-semibold">Steve Paulachak</p>
+                <p className="text-sm text-muted-foreground">Co-Founder &amp; CEO</p>
+                <a
+                  href="https://www.linkedin.com/in/stevepaulachak/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block text-purple hover:text-purple-light transition-colors"
+                >
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <div className="mt-4 space-y-3 text-sm text-muted-foreground leading-relaxed">
+                  <p>
+                    Steve is the Co-Founder and CEO of Aspiro, focused on building AI systems
+                    that don&apos;t just assist work — they execute it.
+                  </p>
+                  <p>
+                    He brings a track record of leading commercial strategy, product direction,
+                    and market expansion across global organisations, consistently translating
+                    vision into measurable results.
+                  </p>
+                  <p>
+                    Steve&apos;s perspective is grounded in a simple belief: AI is not the
+                    advantage — how you apply it is. Through Aspiro, he is building systems
+                    that give individuals and businesses that advantage, turning uncertainty
+                    into direction and ideas into execution.
+                  </p>
+                </div>
+              </div>
             </div>
-            
+
             {/* Alex */}
-            <div className="text-center">
-              <div className="relative h-64 w-64 mx-auto overflow-hidden rounded-2xl border-2 border-purple/30 shadow-lg shadow-purple/10">
+            <div className="grid gap-8 sm:grid-cols-[200px_1fr] sm:items-start">
+              <div className="relative mx-auto sm:mx-0 h-48 w-48 sm:w-full overflow-hidden rounded-2xl border-2 border-purple/30 shadow-lg shadow-purple/10" style={{minHeight: '200px'}}>
                 <Image
                   src="/alex-williams.jpg"
                   alt="Alex Williams - Co-Founder of Aspiro AI"
@@ -68,22 +88,39 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-4 text-lg font-medium">Alex Williams</p>
-              <p className="text-sm text-muted-foreground">Co-Founder</p>
-              <a
-                href="https://www.linkedin.com/in/atkw1977/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-block text-purple hover:text-purple-light transition-colors"
-              >
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
+              <div>
+                <p className="text-lg font-semibold">Alex Williams</p>
+                <p className="text-sm text-muted-foreground">Co-Founder</p>
+                <a
+                  href="https://www.linkedin.com/in/atkw1977/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block text-purple hover:text-purple-light transition-colors"
+                >
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <div className="mt-4 space-y-3 text-sm text-muted-foreground leading-relaxed">
+                  <p>
+                    Alex brings a sharp commercial lens to Aspiro, ensuring that ambition is
+                    always matched with execution. With a background in business operations and
+                    financial strategy, he focuses on turning ideas into structured, scalable
+                    outcomes.
+                  </p>
+                  <p>
+                    Where others see complexity, Alex brings clarity — breaking down decisions,
+                    aligning priorities, and keeping momentum grounded in real-world viability.
+                    He ensures that every move is not just innovative, but commercially sound,
+                    sustainable, and built to last.
+                  </p>
+                </div>
+              </div>
             </div>
+
             {/* Dave */}
-            <div className="text-center">
-              <div className="relative h-64 w-64 mx-auto overflow-hidden rounded-2xl border-2 border-purple/30 shadow-lg shadow-purple/10">
+            <div className="grid gap-8 sm:grid-cols-[200px_1fr] sm:items-start">
+              <div className="relative mx-auto sm:mx-0 h-48 w-48 sm:w-full overflow-hidden rounded-2xl border-2 border-purple/30 shadow-lg shadow-purple/10" style={{minHeight: '200px'}}>
                 <Image
                   src="/dave-jetuah.jpg"
                   alt="Dave Jetuah - Head of Media & GTM at Aspiro AI"
@@ -91,19 +128,35 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-4 text-lg font-medium">Dave Jetuah</p>
-              <p className="text-sm text-muted-foreground">Head of Media &amp; GTM</p>
-              <a
-                href="https://www.linkedin.com/in/david-jetuah-9402199/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-block text-purple hover:text-purple-light transition-colors"
-              >
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
+              <div>
+                <p className="text-lg font-semibold">Dave Jetuah</p>
+                <p className="text-sm text-muted-foreground">Head of Media &amp; GTM</p>
+                <a
+                  href="https://www.linkedin.com/in/david-jetuah-9402199/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block text-purple hover:text-purple-light transition-colors"
+                >
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <div className="mt-4 space-y-3 text-sm text-muted-foreground leading-relaxed">
+                  <p>
+                    David is a seasoned communications expert, providing reputation management
+                    advice to C-Suite, Executive Leadership and wider corporate networks. He
+                    brings 15 years&apos; experience in global professional services
+                    communications, reinforced by five years as a business journalist.
+                  </p>
+                  <p>
+                    His expertise covers a range of industries and corporate situations
+                    including major transformational programmes, M&amp;A advisory, regulatory
+                    impacts, and crisis communications.
+                  </p>
+                </div>
+              </div>
             </div>
+
           </div>
 
           {/* Mission Statement */}
