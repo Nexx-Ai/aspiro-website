@@ -32,7 +32,7 @@ export default function AboutPage() {
           </h2>
           
           {/* Founders Grid */}
-          <div className="grid gap-12 md:grid-cols-2 max-w-4xl mx-auto">
+          <div className="grid gap-12 md:grid-cols-3 max-w-5xl mx-auto">
             {/* Steve */}
             <div className="text-center">
               <div className="relative h-64 w-64 mx-auto overflow-hidden rounded-2xl border-2 border-purple/30 shadow-lg shadow-purple/10">
@@ -81,8 +81,21 @@ export default function AboutPage() {
                 </svg>
               </a>
             </div>
+            {/* Dave */}
+            <div className="text-center">
+              <div className="relative h-64 w-64 mx-auto overflow-hidden rounded-2xl border-2 border-purple/30 shadow-lg shadow-purple/10">
+                <Image
+                  src="/dave-jetuah.jpg"
+                  alt="Dave Jetuah - Head of Media & GTM at Aspiro AI"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="mt-4 text-lg font-medium">Dave Jetuah</p>
+              <p className="text-sm text-muted-foreground">Head of Media &amp; GTM</p>
+            </div>
           </div>
-          
+
           {/* Mission Statement */}
           <div className="mt-16 max-w-3xl mx-auto">
             <div className="space-y-6 text-muted-foreground">
