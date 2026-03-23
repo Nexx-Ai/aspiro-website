@@ -1,37 +1,10 @@
 "use client";
 
-import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
-import Script from "next/script";
-import { useEffect, useState } from "react";
-
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "";
+import CookieConsent from "react-cookie-consent";
 
 export function CookieBanner() {
-  const [hasConsent, setHasConsent] = useState(false);
-
-  useEffect(() => {
-    const consent = getCookieConsentValue("aspiro-cookie-consent");
-    setHasConsent(consent === "true");
-  }, []);
-
   return (
     <>
-      {hasConsent && GA_MEASUREMENT_ID && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-            strategy="afterInteractive"
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}');
-            `}
-          </Script>
-        </>
-      )}
       <CookieConsent
         location="bottom"
         buttonText="Accept"
@@ -58,8 +31,7 @@ export function CookieBanner() {
           padding: "0.5rem 1.5rem",
           fontWeight: "500",
         }}
-        onAccept={() => setHasConsent(true)}
-        onDecline={() => setHasConsent(false)}
+
       >
         <span style={{ fontSize: "0.875rem" }}>
           We use cookies to analyse site traffic and improve your experience.{" "}
