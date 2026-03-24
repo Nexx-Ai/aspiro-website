@@ -75,7 +75,7 @@ const websiteSchema = {
   name: "Aspiro AI",
   url: "https://aspiroai.digital",
   description:
-    "AI consulting for UK SMEs — practical AI solutions that actually ship.",
+    "AI consulting for UK SMEs. Practical solutions that actually ship.",
   publisher: {
     "@type": "Organization",
     name: "Aspiro AI",

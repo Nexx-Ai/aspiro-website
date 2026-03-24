@@ -61,7 +61,7 @@ export default function AboutPage() {
                 <div className="mt-4 space-y-3 text-sm text-muted-foreground leading-relaxed">
                   <p>
                     Steve is the Co-Founder and CEO of Aspiro, focused on building AI systems
-                    that don&apos;t just assist work — they execute it.
+                    that don&apos;t just assist work. They execute it.
                   </p>
                   <p>
                     He brings a track record of leading commercial strategy, product direction,
@@ -70,7 +70,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     Steve&apos;s perspective is grounded in a simple belief: AI is not the
-                    advantage — how you apply it is. Through Aspiro, he is building systems
+                    advantage. What matters is how you apply it. Through Aspiro, he is building systems
                     that give individuals and businesses that advantage, turning uncertainty
                     into direction and ideas into execution.
                   </p>
@@ -109,8 +109,8 @@ export default function AboutPage() {
                     outcomes.
                   </p>
                   <p>
-                    Where others see complexity, Alex brings clarity — breaking down decisions,
-                    aligning priorities, and keeping momentum grounded in real-world viability.
+                    Where others see complexity, Alex brings clarity. He breaks down decisions,
+                    aligns priorities, and keeps momentum grounded in real-world viability.
                     He ensures that every move is not just innovative, but commercially sound,
                     sustainable, and built to last.
                   </p>
@@ -168,7 +168,7 @@ export default function AboutPage() {
                 to change that.
               </p>
               <p>
-                We give you something you&apos;ve probably never had &mdash; a team that&apos;s
+                We give you something you&apos;ve probably never had: a team that&apos;s
                 always there. One that remembers every customer, every conversation,
                 every detail you&apos;d normally lose in the chaos of running a business.
                 It learns how <em>you</em> work. It picks up the things that slip through
@@ -200,8 +200,8 @@ export default function AboutPage() {
               <p>
                 That&apos;s what Aspiro does. We take the time to understand your
                 business before we touch any technology. We speak in plain
-                language. And we build solutions that your team can actually use
-                &mdash; not shelf-ware that gathers dust after the first week.
+                language. And we build solutions that your team can actually use,
+                not shelf-ware that gathers dust after the first week.
               </p>
               <p>
                 This isn&apos;t about being on the cutting edge for the sake of it.
@@ -271,7 +271,7 @@ export default function AboutPage() {
               Let&apos;s figure it out together
             </h2>
             <p className="mt-4 text-muted-foreground">
-              If any of this resonates, we should talk. No sales pitch &mdash; just
+              If any of this resonates, we should talk. No sales pitch. Just
               a genuine conversation about where AI can help your business.
             </p>
             <Button

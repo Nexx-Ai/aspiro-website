@@ -16,7 +16,7 @@ const services = [
     description:
       "Before you invest in any AI solution, you need to know where it actually makes sense. Our audit gives you a clear, jargon-free map of the opportunities in your business.",
     points: [
-      "Deep dive into your current workflows and pain points",
+      "A thorough review of your current workflows and pain points",
       "Identify where AI can save time, money, or effort",
       "Honest assessment of what's worth automating and what isn't",
       "Prioritised roadmap so you know exactly where to start",
@@ -41,10 +41,10 @@ const services = [
   },
   {
     id: "aipa",
-    title: "AIPA \u2014 AI Personal Assistant",
+    title: "AIPA: AI Personal Assistant",
     subtitle: "A mind that lives in your business",
     description:
-      "Your own AI assistant, trained on your business knowledge, your processes, your tone of voice. It doesn't just answer questions \u2014 it thinks like part of your team.",
+      "Your own AI assistant, trained on your business knowledge, your processes, your tone of voice. It doesn't just answer questions. It thinks like part of your team.",
     points: [
       "Trained on your specific business knowledge",
       "Answers customer and team queries instantly",

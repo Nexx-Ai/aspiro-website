@@ -48,7 +48,7 @@ export default function ContactPage() {
           <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-purple/10">
             <CheckCircle2 className="h-8 w-8 text-purple" />
           </div>
-          <h1 className="text-3xl font-bold">Thanks — we&apos;ll be in touch.</h1>
+          <h1 className="text-3xl font-bold">Thanks. We&apos;ll be in touch.</h1>
           <p className="mt-4 text-lg text-muted-foreground">
             We aim to respond within 24 hours.
           </p>

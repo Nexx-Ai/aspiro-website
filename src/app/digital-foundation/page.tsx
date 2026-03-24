@@ -3,13 +3,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Digital Foundation — AI-Ready Websites | Aspiro AI",
+  title: "Digital Foundation: AI-Ready Websites | Aspiro AI",
   description:
-    "AI-ready websites that get you found — by humans and machines. Fast, modern websites built for the AI era with structured data, mobile-first design, and sub-2-second load times.",
+    "AI-ready websites that get you found by humans and machines. Fast, modern websites built for the AI era with structured data, mobile-first design, and sub-2-second load times.",
   openGraph: {
-    title: "Digital Foundation — AI-Ready Websites | Aspiro AI",
+    title: "Digital Foundation: AI-Ready Websites | Aspiro AI",
     description:
-      "AI-ready websites that get you found — by humans and machines. Fast, modern websites built for the AI era.",
+      "AI-ready websites that get you found by humans and machines. Fast, modern websites built for the AI era.",
   },
 };
 
@@ -68,7 +68,7 @@ export default function DigitalFoundationPage() {
               Digital Foundation
             </p>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              AI-ready websites that get you found — by humans and machines
+              AI-ready websites that get you found. By humans and machines.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
               Before AI can help your business, you need the right foundation. A
@@ -174,12 +174,12 @@ export default function DigitalFoundationPage() {
               {
                 title: "Trades & home services",
                 description:
-                  "Plumbers, electricians, HVAC, landscaping — get found by customers searching on their phones and through AI.",
+                  "Plumbers, electricians, HVAC, landscaping. Get found by customers searching on their phones and through AI.",
               },
               {
                 title: "Professional services",
                 description:
-                  "Accountants, solicitors, consultants — a website that reflects the quality of your work.",
+                  "Accountants, solicitors, consultants. A website that reflects the quality of your work.",
               },
               {
                 title: "Finance & mortgage brokers",
@@ -204,7 +204,7 @@ export default function DigitalFoundationPage() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-muted-foreground italic">
-            If your current site makes you cringe when you share the link — we
+            If your current site makes you cringe when you share the link, we
             should talk.
           </p>
         </div>
@@ -280,7 +280,7 @@ export default function DigitalFoundationPage() {
               {
                 title: "Connect Your Tools",
                 description:
-                  "CRM, calendar, inbox — all talking to each other.",
+                  "CRM, calendar, inbox. All connected.",
               },
             ].map((item) => (
               <div
@@ -353,7 +353,7 @@ export default function DigitalFoundationPage() {
             </h2>
             <p className="mt-4 text-muted-foreground">
               Get a free audit of your current site and see exactly
-              what&apos;s holding you back — and what&apos;s possible.
+              what&apos;s holding you back and what&apos;s possible.
             </p>
             <Button
               asChild

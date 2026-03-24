@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "AIPA - AI Personal Assistant",
   description:
-    "Your own AI assistant, trained on your business. AIPA doesn't just answer questions \u2014 it thinks like part of your team.",
+    "Your own AI assistant, trained on your business. AIPA doesn't just answer questions. It thinks like part of your team.",
 };
 
 export default function AIPAPage() {
@@ -68,7 +68,7 @@ export default function AIPAPage() {
               {
                 title: "Integrates with your tools",
                 description:
-                  "AIPA plugs into the platforms you already use. Your website, your CRM, your internal tools \u2014 wherever it's needed.",
+                  "AIPA plugs into the platforms you already use. Your website, your CRM, your internal tools. Wherever it's needed.",
               },
               {
                 title: "You stay in control",
@@ -152,7 +152,7 @@ export default function AIPAPage() {
               {
                 title: "Customer Support",
                 description:
-                  "Instant, accurate answers to customer questions \u2014 based on your actual knowledge base, not generic responses.",
+                  "Instant, accurate answers to customer questions, based on your actual knowledge base rather than generic responses.",
               },
               {
                 title: "Internal Knowledge Base",

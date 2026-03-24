@@ -20,7 +20,7 @@ export async function POST(req: Request) {
       from: "Aspiro AI <noreply@aspiroai.digital>",
       to: ["enquiries@aspiroai.digital"],
       replyTo: email,
-      subject: `New enquiry from ${name} — ${company}`,
+      subject: `New enquiry from ${name} (${company})`,
       text: `
 New enquiry from aspiroai.digital
 
