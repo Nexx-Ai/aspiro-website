@@ -104,7 +104,7 @@ export default function ContactPage() {
             <div className="mt-10 rounded-xl border border-border/50 bg-card p-6">
               <p className="text-sm font-medium">Aspiro AI Ltd</p>
               <p className="mt-2 text-sm text-muted-foreground">
-                AI consultancy helping SMEs harness artificial intelligence
+                AI consultancy helping SMEs put AI to work
                 with a human-first approach.
               </p>
             </div>

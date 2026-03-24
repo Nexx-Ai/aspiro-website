@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet Steve and Alex, the co-founders behind Aspiro AI. We help SMEs harness AI with a human-first, consultative approach.",
+    "Meet Steve and Alex, the co-founders behind Aspiro AI. We help SMEs use AI in ways that actually work, with a human-first approach.",
 };
 
 export default function AboutPage() {
@@ -105,13 +105,13 @@ export default function AboutPage() {
                   <p>
                     Alex brings a sharp commercial lens to Aspiro, ensuring that ambition is
                     always matched with execution. With a background in business operations and
-                    financial strategy, he focuses on turning ideas into structured, scalable
-                    outcomes.
+                    financial strategy, he focuses on turning ideas into outcomes that
+                    hold up under pressure.
                   </p>
                   <p>
                     Where others see complexity, Alex brings clarity. He breaks down decisions,
                     aligns priorities, and keeps momentum grounded in real-world viability.
-                    He ensures that every move is not just innovative, but commercially sound,
+                    He makes sure every move is commercially sound,
                     sustainable, and built to last.
                   </p>
                 </div>
@@ -204,7 +204,7 @@ export default function AboutPage() {
                 not shelf-ware that gathers dust after the first week.
               </p>
               <p>
-                This isn&apos;t about being on the cutting edge for the sake of it.
+                This isn&apos;t about chasing the latest thing for the sake of it.
                 It&apos;s about finding the right AI for your business and making sure
                 it sticks.
               </p>
@@ -234,7 +234,7 @@ export default function AboutPage() {
               {
                 title: "Partnership, not projects",
                 description:
-                  "We're not here to deliver and disappear. We build lasting relationships because AI is a journey, not a one-off.",
+                  "We're not here to deliver and disappear. Getting AI right takes time, and we're in it for the long run.",
               },
               {
                 title: "Plain language",

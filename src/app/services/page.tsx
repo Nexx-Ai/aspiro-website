@@ -32,7 +32,7 @@ const services = [
       "Custom automations that plug into the tools you already use. We build workflows that handle the repetitive stuff so your team can focus on what matters.",
     points: [
       "Lead capture and qualification on autopilot",
-      "Internal operations streamlined with AI",
+      "Internal operations simplified with AI",
       "Customer communication flows that feel personal",
       "Data processing and reporting automated",
     ],

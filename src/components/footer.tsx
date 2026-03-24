@@ -10,7 +10,7 @@ export function Footer() {
               <span className="text-purple">Aspiro</span> AI
             </Link>
             <p className="mt-3 text-sm text-muted-foreground">
-              Empowering your ambitions with AI that fits your business.
+              Practical AI for businesses that mean it.
             </p>
           </div>
 

@@ -25,12 +25,12 @@ export const metadata: Metadata = {
     template: "%s | Aspiro AI",
   },
   description:
-    "We help small and medium businesses harness AI to work smarter, not harder. Practical AI solutions that actually ship.",
+    "We help small and medium businesses put AI to work. Practical solutions that actually ship.",
   keywords: ["AI consultancy", "AI for SME", "AI automation", "AI personal assistant", "business AI"],
   openGraph: {
     title: "Aspiro AI | AI Consulting for UK SMEs",
     description:
-      "We help small and medium businesses harness AI to work smarter, not harder. Practical AI solutions that actually ship.",
+      "We help small and medium businesses put AI to work. Practical solutions that actually ship.",
     url: "https://aspiroai.digital",
     siteName: "Aspiro AI",
     type: "website",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Aspiro AI | AI Consulting for UK SMEs",
     description:
-      "We help small and medium businesses harness AI to work smarter, not harder. Practical AI solutions that actually ship.",
+      "We help small and medium businesses put AI to work. Practical solutions that actually ship.",
     images: ["/og-image.png"],
   },
 };
@@ -58,7 +58,7 @@ const organizationSchema = {
   name: "Aspiro AI",
   url: "https://aspiroai.digital",
   description:
-    "We help small and medium businesses harness AI to work smarter, not harder. Practical AI solutions that actually ship.",
+    "We help small and medium businesses put AI to work. Practical solutions that actually ship.",
   foundingDate: "2024",
   areaServed: "GB",
   serviceType: [
