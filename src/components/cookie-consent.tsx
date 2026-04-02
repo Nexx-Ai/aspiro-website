@@ -1,16 +1,46 @@
 "use client";
 
-import CookieConsent from "react-cookie-consent";
+import { useState, useEffect } from "react";
+import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
+import Script from "next/script";
 
-export function CookieBanner() {
+const COOKIE_NAME = "aspiro-cookie-consent";
+
+export function CookieBanner({ gaId }: { gaId?: string }) {
+  const [gaEnabled, setGaEnabled] = useState(false);
+
+  // Returning visitors: consent cookie already set — load GA immediately
+  useEffect(() => {
+    if (getCookieConsentValue(COOKIE_NAME) === "true") {
+      setGaEnabled(true);
+    }
+  }, []);
+
   return (
     <>
+      {gaEnabled && gaId && (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${gaId}');
+            `}
+          </Script>
+        </>
+      )}
       <CookieConsent
         location="bottom"
         buttonText="Accept"
         declineButtonText="Decline"
         enableDeclineButton
-        cookieName="aspiro-cookie-consent"
+        cookieName={COOKIE_NAME}
+        onAccept={() => setGaEnabled(true)}
         style={{
           background: "hsl(var(--card))",
           borderTop: "1px solid hsl(var(--border))",
@@ -31,7 +61,6 @@ export function CookieBanner() {
           padding: "0.5rem 1.5rem",
           fontWeight: "500",
         }}
-
       >
         <span style={{ fontSize: "0.875rem" }}>
           We use cookies to analyse site traffic and improve your experience.{" "}
